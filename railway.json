@@ -1,0 +1,6 @@
+{
+  "build": {
+    "builder": "NIXPACKS",
+    "buildCommand": "composer install --ignore-platform-req=ext-bcmath --optimize-autoloader --no-interaction"
+  }
+}
