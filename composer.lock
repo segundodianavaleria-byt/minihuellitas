@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6b8fc0176afe2e3686e2eb9b9a09e0cc",
+    "content-hash": "9c21565420e409a5059d3c2940bd8ee7",
     "packages": [
         {
             "name": "brick/math",
@@ -1052,6 +1052,51 @@
                 }
             ],
             "time": "2025-08-22T14:27:06+00:00"
+        },
+        {
+            "name": "heroku/heroku-buildpack-php",
+            "version": "v286",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/heroku/heroku-buildpack-php.git",
+                "reference": "97a36adaabc1a496c79ff63cff8721a27197c126"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/97a36adaabc1a496c79ff63cff8721a27197c126",
+                "reference": "97a36adaabc1a496c79ff63cff8721a27197c126",
+                "shasum": ""
+            },
+            "bin": [
+                "bin/heroku-php-apache2",
+                "bin/heroku-php-nginx"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Zuelke",
+                    "email": "dz@heroku.com"
+                }
+            ],
+            "description": "Toolkit for starting a PHP application locally, with or without foreman, using the same config for PHP and Apache2/Nginx as on Heroku",
+            "homepage": "https://github.com/heroku/heroku-buildpack-php",
+            "keywords": [
+                "apache",
+                "apache2",
+                "foreman",
+                "heroku",
+                "nginx",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/heroku/heroku-buildpack-php/issues",
+                "source": "https://github.com/heroku/heroku-buildpack-php/tree/v286"
+            },
+            "time": "2026-04-15T19:31:49+00:00"
         },
         {
             "name": "laravel/framework",
@@ -10880,7 +10925,8 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.2"
+        "php": "^8.2",
+        "ext-bcmath": "*"
     },
     "platform-dev": {},
     "plugin-api-version": "2.6.0"
